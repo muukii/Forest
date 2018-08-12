@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B21566A211FF08700C16B37 /* Forest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B215669211FF08700C16B37 /* Forest.swift */; };
 		4B5602662116D6BC007F0567 /* Forest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5602642116D6BC007F0567 /* Forest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B215669211FF08700C16B37 /* Forest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forest.swift; sourceTree = "<group>"; };
 		4B5602612116D6BC007F0567 /* Forest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Forest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5602642116D6BC007F0567 /* Forest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Forest.h; sourceTree = "<group>"; };
 		4B5602652116D6BC007F0567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				4B5602642116D6BC007F0567 /* Forest.h */,
 				4B5602652116D6BC007F0567 /* Info.plist */,
+				4B215669211FF08700C16B37 /* Forest.swift */,
 			);
 			path = Forest;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					4B5602602116D6BC007F0567 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B21566A211FF08700C16B37 /* Forest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		4B56026A2116D6BC007F0567 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.Forest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		4B56026B2116D6BC007F0567 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
